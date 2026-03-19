@@ -33,7 +33,7 @@ body {
   overflow: hidden;
   background: radial-gradient(circle at 20% 20%, #5a0a0f, var(--bg-dark));
   color: #fff;
-  padding: 5rem 120px 6rem 0;
+  padding: 5rem 120px 6rem 120px;
 }
 
 .hero::before {
@@ -77,26 +77,26 @@ body {
 }
 
 .chile-1 {
-  --rotate: 12deg;
-  top: 10%;
-  right: 7%;
+  --rotate: -14deg;
+  top: 12%;
+  left: 3%;
   width: 120px;
 }
 
 .chile-2 {
-  --rotate: -8deg;
+  --rotate: 10deg;
   --float-duration: 8.2s;
   --float-distance: 9px;
-  top: 48%;
-  right: 2%;
+  top: 58%;
+  left: 10%;
   width: 150px;
 }
 
 .chile-3 {
-  --rotate: 10deg;
+  --rotate: -6deg;
   --float-duration: 7.8s;
-  bottom: 8%;
-  right: 15%;
+  bottom: 30%;
+  left: 0.5%;
   width: 128px;
 }
 
@@ -283,7 +283,8 @@ h1 {
 
   .hero {
     padding-top: 4.2rem;
-    padding-right: 80px;
+    padding-right: 40px;
+    padding-left: 90px;
   }
 
   .chile {
@@ -292,26 +293,27 @@ h1 {
 
   .chile-1 {
     top: 10%;
-    right: 1%;
+    left: 1%;
     width: 80px;
   }
 
   .chile-2 {
-    top: 50%;
-    right: -2%;
+    top: 56%;
+    left: 7%;
     width: 96px;
   }
 
   .chile-3 {
-    bottom: 8%;
-    right: 4%;
+    bottom: 34%;
+    left: -2%;
     width: 84px;
   }
 }
 
 @media (max-width: 620px) {
   .hero {
-    padding-right: 36px;
+    padding-right: 24px;
+    padding-left: 64px;
   }
 
   .hero__content {
@@ -324,18 +326,20 @@ h1 {
 
   .chile-1 {
     top: 8%;
-    right: -10%;
+    left: -4%;
     width: 60px;
   }
 
   .chile-2 {
-    top: 56%;
-    right: -15%;
+    top: 58%;
+    left: 0;
     width: 72px;
   }
 
   .chile-3 {
-    display: none;
+    bottom: 36%;
+    left: -7%;
+    width: 62px;
   }
 
   .name-grid {

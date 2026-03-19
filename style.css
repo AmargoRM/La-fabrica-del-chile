@@ -42,39 +42,52 @@ body {
   max-width: 700px;
 }
 
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
 .chile {
   --rotate: 0deg;
-  --float-distance: 12px;
-  --float-duration: 5.5s;
+  --float-distance: 8px;
+  --float-duration: 7.5s;
   position: absolute;
-  width: 90px;
+  width: 140px;
+  height: auto;
+  background: none;
+  border: none;
+  box-shadow: none;
   opacity: 0.95;
   pointer-events: none;
+  user-select: none;
   z-index: 1;
-  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.18));
   transform: rotate(var(--rotate));
   animation: chile-float var(--float-duration) ease-in-out infinite;
 }
 
 .chile-1 {
-  --rotate: 12deg;
-  top: 14%;
-  right: 12%;
+  --rotate: 14deg;
+  top: 10%;
+  right: 8%;
+  width: 110px;
 }
 
 .chile-2 {
   --rotate: -8deg;
-  --float-duration: 6.4s;
-  --float-distance: 10px;
+  --float-duration: 8.2s;
+  --float-distance: 9px;
   top: 42%;
   right: 4%;
+  width: 150px;
 }
 
 .chile-3 {
   --rotate: 10deg;
-  --float-duration: 5.9s;
-  top: 68%;
-  right: 16%;
+  --float-duration: 7.8s;
+  bottom: 8%;
+  right: 18%;
+  width: 130px;
 }
 
 @keyframes chile-float {
@@ -297,20 +310,25 @@ h1 {
   }
 
   .chile {
-    width: 76px;
-    opacity: 0.7;
+    opacity: 0.72;
   }
 
   .chile-1 {
-    right: 8%;
+    top: 8%;
+    right: -2%;
+    width: 84px;
   }
 
   .chile-2 {
-    right: 2%;
+    top: 56%;
+    right: -8%;
+    width: 102px;
   }
 
   .chile-3 {
-    right: 10%;
+    bottom: 6%;
+    right: 18%;
+    width: 88px;
   }
 }
 
@@ -320,23 +338,23 @@ h1 {
   }
 
   .chile {
-    width: 64px;
-    opacity: 0.55;
+    opacity: 0.62;
   }
 
   .chile-1 {
-    top: 12%;
-    right: 2%;
+    top: 9%;
+    right: -6%;
+    width: 72px;
   }
 
   .chile-2 {
-    top: 42%;
-    right: -2%;
+    top: 62%;
+    right: -14%;
+    width: 88px;
   }
 
   .chile-3 {
-    top: 68%;
-    right: 6%;
+    display: none;
   }
 
   .name-grid {

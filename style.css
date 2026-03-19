@@ -42,6 +42,51 @@ body {
   max-width: 700px;
 }
 
+.chile {
+  --rotate: 0deg;
+  --float-distance: 12px;
+  --float-duration: 5.5s;
+  position: absolute;
+  width: 90px;
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.35));
+  transform: rotate(var(--rotate));
+  animation: chile-float var(--float-duration) ease-in-out infinite;
+}
+
+.chile-1 {
+  --rotate: 12deg;
+  top: 14%;
+  right: 12%;
+}
+
+.chile-2 {
+  --rotate: -8deg;
+  --float-duration: 6.4s;
+  --float-distance: 10px;
+  top: 42%;
+  right: 4%;
+}
+
+.chile-3 {
+  --rotate: 10deg;
+  --float-duration: 5.9s;
+  top: 68%;
+  right: 16%;
+}
+
+@keyframes chile-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--rotate));
+  }
+  50% {
+    transform: translateY(calc(-1 * var(--float-distance))) rotate(var(--rotate));
+  }
+}
+
 .badge {
   display: inline-block;
   margin: 0;
@@ -95,51 +140,6 @@ h1 {
 .btn--accent {
   color: #fff;
   background: var(--chile-red-strong);
-}
-
-.hero__art {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.pepper {
-  position: absolute;
-  width: 130px;
-  aspect-ratio: 2.7 / 1;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #d41f26, #8f0e13);
-  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.35));
-  transform: rotate(-20deg);
-}
-
-.pepper::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: 8px;
-  width: 28px;
-  height: 8px;
-  border-radius: 999px;
-  background: #5f8535;
-  transform: rotate(20deg);
-}
-
-.pepper--one {
-  right: 18%;
-  top: 16%;
-}
-
-.pepper--two {
-  right: 8%;
-  top: 40%;
-  transform: rotate(-5deg) scale(1.2);
-}
-
-.pepper--three {
-  right: 26%;
-  top: 62%;
-  transform: rotate(-28deg) scale(0.95);
 }
 
 .section {
@@ -296,12 +296,49 @@ h1 {
     padding-top: 4.2rem;
   }
 
-  .pepper {
-    opacity: 0.42;
+  .chile {
+    width: 76px;
+    opacity: 0.7;
+  }
+
+  .chile-1 {
+    right: 8%;
+  }
+
+  .chile-2 {
+    right: 2%;
+  }
+
+  .chile-3 {
+    right: 10%;
   }
 }
 
 @media (max-width: 620px) {
+  .hero__content {
+    padding-right: 1rem;
+  }
+
+  .chile {
+    width: 64px;
+    opacity: 0.55;
+  }
+
+  .chile-1 {
+    top: 12%;
+    right: 2%;
+  }
+
+  .chile-2 {
+    top: 42%;
+    right: -2%;
+  }
+
+  .chile-3 {
+    top: 68%;
+    right: 6%;
+  }
+
   .name-grid {
     grid-template-columns: 1fr;
   }

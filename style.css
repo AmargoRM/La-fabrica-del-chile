@@ -33,7 +33,7 @@ body {
   overflow: hidden;
   background: radial-gradient(circle at 20% 20%, #5a0a0f, var(--bg-dark));
   color: #fff;
-  padding: 5rem 0 6rem;
+  padding: 5rem 120px 6rem 0;
 }
 
 .hero__content {
@@ -44,7 +44,8 @@ body {
 
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 5;
+  max-width: 550px;
 }
 
 .chile {
@@ -67,9 +68,9 @@ body {
 }
 
 .chile-1 {
-  --rotate: 14deg;
-  top: 10%;
-  right: 8%;
+  --rotate: 12deg;
+  top: 12%;
+  right: 6%;
   width: 110px;
 }
 
@@ -77,17 +78,17 @@ body {
   --rotate: -8deg;
   --float-duration: 8.2s;
   --float-distance: 9px;
-  top: 42%;
-  right: 4%;
-  width: 150px;
+  top: 45%;
+  right: 2%;
+  width: 140px;
 }
 
 .chile-3 {
   --rotate: 10deg;
   --float-duration: 7.8s;
-  bottom: 8%;
-  right: 18%;
-  width: 130px;
+  bottom: 10%;
+  right: 12%;
+  width: 120px;
 }
 
 @keyframes chile-float {
@@ -307,6 +308,7 @@ h1 {
 
   .hero {
     padding-top: 4.2rem;
+    padding-right: 80px;
   }
 
   .chile {
@@ -314,25 +316,29 @@ h1 {
   }
 
   .chile-1 {
-    top: 8%;
-    right: -2%;
-    width: 84px;
+    top: 10%;
+    right: 1%;
+    width: 80px;
   }
 
   .chile-2 {
-    top: 56%;
-    right: -8%;
-    width: 102px;
+    top: 50%;
+    right: -2%;
+    width: 96px;
   }
 
   .chile-3 {
-    bottom: 6%;
-    right: 18%;
-    width: 88px;
+    bottom: 8%;
+    right: 4%;
+    width: 84px;
   }
 }
 
 @media (max-width: 620px) {
+  .hero {
+    padding-right: 36px;
+  }
+
   .hero__content {
     padding-right: 1rem;
   }
@@ -342,15 +348,15 @@ h1 {
   }
 
   .chile-1 {
-    top: 9%;
-    right: -6%;
-    width: 72px;
+    top: 8%;
+    right: -10%;
+    width: 60px;
   }
 
   .chile-2 {
-    top: 62%;
-    right: -14%;
-    width: 88px;
+    top: 56%;
+    right: -15%;
+    width: 72px;
   }
 
   .chile-3 {

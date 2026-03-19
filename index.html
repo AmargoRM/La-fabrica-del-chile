@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page de prospección para el proyecto La Fábrica de Chiles Sin Nombre."
+    />
+    <title>La Fábrica de Chiles Sin Nombre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <div class="container hero__content">
+        <p class="badge">Proyecto en prospección</p>
+        <h1>La Fábrica de Chiles Sin Nombre</h1>
+        <p class="hero__subtitle">
+          Estamos creando un chile en polvo con carácter. Antes de lanzarlo,
+          queremos que nos ayudes a bautizarlo.
+        </p>
+        <a href="#participa" class="btn btn--primary">Quiero participar</a>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="pepper pepper--one"></div>
+        <div class="pepper pepper--two"></div>
+        <div class="pepper pepper--three"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--light" id="producto">
+        <div class="container split">
+          <div>
+            <h2>Chile en polvo de verdad</h2>
+            <p>
+              No estamos buscando un chile cualquiera. Queremos construir un
+              chile en polvo auténtico, intenso y con verdadera presencia de
+              chile panameño.
+            </p>
+            <p>
+              Nuestra mezcla parte de una base de <strong>más del 80% de chile
+              panameño</strong>, acompañada por ingredientes seleccionados para
+              lograr ese sabor y picor que mucha gente espera de un chile en
+              polvo real.
+            </p>
+            <p>
+              Estamos en etapa de prospección. Queremos medir interés, escuchar
+              ideas y construir esta marca con ayuda de quienes sí disfrutan el
+              picante de verdad.
+            </p>
+          </div>
+
+          <aside class="jar-card" aria-label="Ilustración de recipiente de chile">
+            <div class="jar">
+              <div class="jar__lid"></div>
+              <div class="jar__body"></div>
+              <div class="jar__label">80%+ chile panameño</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="participa">
+        <div class="container">
+          <h2>Ayúdanos a elegir el nombre</h2>
+          <p class="section__lead">
+            Selecciona una opción sugerida o propón un nombre nuevo.
+          </p>
+
+          <form id="name-form" class="poll" novalidate>
+            <fieldset class="name-grid">
+              <legend class="sr-only">Nombres sugeridos</legend>
+
+              <label class="option-card">
+                <input type="radio" name="nombre" value="Fuego Tico" />
+                <span>Fuego Tico</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="nombre" value="Panapicante" />
+                <span>Panapicante</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="nombre" value="Polvo Bravo" />
+                <span>Polvo Bravo</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="nombre" value="Chile de Verdad" />
+                <span>Chile de Verdad</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="nombre" value="Pica Rico" />
+                <span>Pica Rico</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="nombre" value="A lo Bestia" />
+                <span>A lo Bestia</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="nombre" value="Fuego Panameño" />
+                <span>Fuego Panameño</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="nombre" value="Sin Miedo" />
+                <span>Sin Miedo</span>
+              </label>
+            </fieldset>
+
+            <label for="custom-name" class="input-label">¿Tienes otra idea?</label>
+            <input
+              id="custom-name"
+              name="customName"
+              type="text"
+              maxlength="40"
+              placeholder="Escribe tu propuesta"
+              autocomplete="off"
+            />
+
+            <button type="submit" class="btn btn--accent">Enviar propuesta</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--light" id="proxima-etapa">
+        <div class="container next-step">
+          <h2>Esto apenas comienza</h2>
+          <p>
+            Próximamente también te pediremos ayuda para elegir el envase ideal
+            del producto.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> La Fábrica de Chiles Sin Nombre · Hecho
+          para validar una idea con la comunidad.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

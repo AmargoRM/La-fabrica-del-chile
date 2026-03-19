@@ -76,28 +76,52 @@ body {
   animation: chile-float var(--float-duration) ease-in-out infinite;
 }
 
-.chile-1 {
+.chile-left-1 {
   --rotate: -14deg;
-  top: 12%;
-  left: 3%;
-  width: 120px;
+  top: 11%;
+  left: -1.5%;
+  width: 112px;
 }
 
-.chile-2 {
+.chile-left-2 {
   --rotate: 10deg;
   --float-duration: 8.2s;
   --float-distance: 9px;
-  top: 58%;
-  left: 10%;
-  width: 150px;
+  top: 61%;
+  left: 4%;
+  width: 136px;
 }
 
-.chile-3 {
+.chile-left-3 {
   --rotate: -6deg;
   --float-duration: 7.8s;
-  bottom: 30%;
-  left: 0.5%;
-  width: 128px;
+  bottom: 8%;
+  left: 15%;
+  width: 118px;
+}
+
+.chile-right-1 {
+  --rotate: 18deg;
+  top: 15%;
+  right: 6%;
+  width: 122px;
+}
+
+.chile-right-2 {
+  --rotate: -8deg;
+  --float-duration: 8s;
+  --float-distance: 10px;
+  top: 42%;
+  right: -1%;
+  width: 152px;
+}
+
+.chile-right-3 {
+  --rotate: 12deg;
+  --float-duration: 7.1s;
+  bottom: 8%;
+  right: 11%;
+  width: 118px;
 }
 
 @keyframes chile-float {
@@ -291,22 +315,40 @@ h1 {
     opacity: 0.72;
   }
 
-  .chile-1 {
+  .chile-left-1 {
     top: 10%;
-    left: 1%;
+    left: -3%;
+    width: 76px;
+  }
+
+  .chile-left-2 {
+    top: 59%;
+    left: 2%;
+    width: 90px;
+  }
+
+  .chile-left-3 {
+    bottom: 8%;
+    left: 11%;
     width: 80px;
   }
 
-  .chile-2 {
-    top: 56%;
-    left: 7%;
-    width: 96px;
+  .chile-right-1 {
+    top: 14%;
+    right: 2%;
+    width: 82px;
   }
 
-  .chile-3 {
-    bottom: 34%;
-    left: -2%;
-    width: 84px;
+  .chile-right-2 {
+    top: 48%;
+    right: -4%;
+    width: 100px;
+  }
+
+  .chile-right-3 {
+    bottom: 10%;
+    right: 8%;
+    width: 78px;
   }
 }
 
@@ -324,22 +366,40 @@ h1 {
     opacity: 0.62;
   }
 
-  .chile-1 {
+  .chile-left-1 {
     top: 8%;
-    left: -4%;
-    width: 60px;
+    left: -6%;
+    width: 56px;
   }
 
-  .chile-2 {
-    top: 58%;
-    left: 0;
+  .chile-left-2 {
+    top: 61%;
+    left: -3%;
+    width: 64px;
+  }
+
+  .chile-left-3 {
+    bottom: 7%;
+    left: 4%;
+    width: 58px;
+  }
+
+  .chile-right-1 {
+    top: 11%;
+    right: -3%;
+    width: 64px;
+  }
+
+  .chile-right-2 {
+    top: 50%;
+    right: -8%;
     width: 72px;
   }
 
-  .chile-3 {
-    bottom: 36%;
-    left: -7%;
-    width: 62px;
+  .chile-right-3 {
+    bottom: 9%;
+    right: 2%;
+    width: 56px;
   }
 
   .name-grid {

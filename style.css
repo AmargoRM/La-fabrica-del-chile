@@ -105,9 +105,24 @@ h1 {
 
 .pepper {
   position: absolute;
-  width: clamp(90px, 14vw, 130px);
+  width: 130px;
+  aspect-ratio: 2.7 / 1;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #d41f26, #8f0e13);
   filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.35));
-  transform: rotate(-12deg);
+  transform: rotate(-20deg);
+}
+
+.pepper::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 8px;
+  width: 28px;
+  height: 8px;
+  border-radius: 999px;
+  background: #5f8535;
+  transform: rotate(20deg);
 }
 
 .pepper--one {
